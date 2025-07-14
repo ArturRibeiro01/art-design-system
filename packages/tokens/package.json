@@ -1,13 +1,13 @@
 {
-  "name": "@art-design-system/tokens",
+  "name": "@art-design-systems/tokens",
   "version": "0.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc --emitDeclarationOnly --project tsconfig.build.json && tsup src/index.ts --format esm,cjs --out-dir dist",
-    "dev": "tsup src/index.ts --format esm,cjs --dts=false --watch --out-dir dist",
+    "build": "tsc --emitDeclarationOnly --project tsconfig.build.json && tsup src/index.ts --format esm,cjs --no-dts --out-dir dist",
+    "dev": "tsup src/index.ts --format esm,cjs --no-dts --watch --out-dir dist",
 
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix"
@@ -17,8 +17,8 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@art-design-system/tsconfig": "*",
-    "@art-design-system/eslint-config": "*",
+    "@art-design-systems/tsconfig": "*",
+    "@art-design-systems/eslint-config": "*",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }

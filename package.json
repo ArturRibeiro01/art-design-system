@@ -1,5 +1,19 @@
 {
-  "name": "art-design-system",
+  "name": "art-design-systems",
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "npm@11.1.0"
 }

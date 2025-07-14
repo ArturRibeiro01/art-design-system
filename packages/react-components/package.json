@@ -1,14 +1,13 @@
 {
-  "name": "@art-design-system/react-components",
+  "name": "@art-design-systems/react-components",
   "version": "0.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --watch",
-
+    "build": "tsup src/index.tsx --format esm,cjs --dts --out-dir dist --external react,react-dom",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --out-dir dist --external react,react-dom --watch",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix"
   },
@@ -17,9 +16,12 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@art-design-system/tokens": "*",
-    "@art-design-system/tsconfig": "*",
-    "@art-design-system/eslint-config": "*",
+    "@art-design-systems/eslint-config": "*",
+    "@art-design-systems/tokens": "*",
+    "@art-design-systems/tsconfig": "*",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "react": "^19.1.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
