@@ -1,5 +1,5 @@
 {
-  "name": "art-design-system",
+  "name": "art-design-systems",
   "private": true,
   "workspaces": [
     "packages/*"

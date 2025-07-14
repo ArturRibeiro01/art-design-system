@@ -1,4 +1,4 @@
 {
-  "extends": "@art-design-system/tsconfig/react.json",
+  "extends": "@art-design-systems/tsconfig/react.json",
   "include": ["src"],
 }
