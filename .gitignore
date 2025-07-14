@@ -149,3 +149,5 @@ psd
 thumb
 sketch
 
+#turborepo
+.turbo
