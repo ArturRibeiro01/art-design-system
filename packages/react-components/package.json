@@ -1,0 +1,22 @@
+{
+  "name": "@art-design-system/react-components",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --watch"
+  },
+  "keywords": [],
+  "author": "Artur Ribeiro",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@art-design-system/tokens": "*",
+    "@art-design-system/tsconfig": "*",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
