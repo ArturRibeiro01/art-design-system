@@ -1,6 +1,6 @@
 {
   "name": "@art-design-systems/tokens",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -8,7 +8,6 @@
   "scripts": {
     "build": "tsc --emitDeclarationOnly --project tsconfig.build.json && tsup src/index.ts --format esm,cjs --no-dts --out-dir dist",
     "dev": "tsup src/index.ts --format esm,cjs --no-dts --watch --out-dir dist",
-
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix"
   },
