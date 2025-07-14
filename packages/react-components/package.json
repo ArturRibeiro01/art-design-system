@@ -7,15 +7,19 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --watch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --watch",
+
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix"
   },
   "keywords": [],
   "author": "Artur Ribeiro",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@art-design-system/tokens": "*",
     "@art-design-system/tsconfig": "*",
+    "@art-design-system/eslint-config": "*",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
