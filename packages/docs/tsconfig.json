@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@art-design-systems/react-components": ["../../react-components"]
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
