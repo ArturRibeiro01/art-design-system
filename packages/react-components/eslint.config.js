@@ -1,4 +1,4 @@
-import eslintConfig from '@art-design-system/eslint-config'
+import eslintConfig from '@art-design-systems/eslint-config';
 
 export default [
     ...eslintConfig,
@@ -10,4 +10,4 @@ export default [
             },
         },
     },
-]
+];
