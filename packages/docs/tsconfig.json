@@ -1,13 +1,20 @@
+// packages/docs/tsconfig.json
 {
+  "extends": "@art-design-systems/tsconfig/react.json", // Or your base config
+
   "compilerOptions": {
-    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Ensure "DOM" and "ESNext" are included
+    "types": ["react", "react-dom", "vite/client", "mdx"], // Explicitly include types if necessary
+    "skipLibCheck": true, // Often useful in monorepos to avoid issues with node_modules types
+   "outDir": "./dist",
     "paths": {
-      "@art-design-systems/react-components": ["../../react-components"]
+     "@art-design-systems/react-components": ["../react-components/src"],
+     "@art-design-systems/tokens":  ["../tokens/src"], // Adjust path as per your monorepo structure
     }
   },
-  "files": [],
+  "include": ["src", "mdx-types.d.ts", "**/*.ts", "**/*.tsx"], // Adjust as per your project structure
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "../react-components" } // If docs is a composite project that consumes react-components
   ]
 }

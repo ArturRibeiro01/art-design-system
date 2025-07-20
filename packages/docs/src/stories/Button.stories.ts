@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 // import { fn } from '@storybook/test'; // Se for usar, precisa instalar
+import { Button  } from '@art-design-systems/react-components'
 
-import { Button } from '../../../react-components/src/Button/Button.tsx';
 
 const meta: Meta<typeof Button> = {
   title: 'Example/Button',

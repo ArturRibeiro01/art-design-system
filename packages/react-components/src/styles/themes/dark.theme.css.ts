@@ -8,7 +8,7 @@ import {
   lineHeights,
   radius,
   space,
-} from '@art-design-system/tokens';
+} from '@art-design-systems/tokens';
 
 export const darkTheme = createTheme(themeContract, {
   color: {
@@ -41,7 +41,7 @@ export const darkTheme = createTheme(themeContract, {
       info: palette.blue[300],
     },
   },
-  
+
   font: {
     family: {
       default: fonts.default,

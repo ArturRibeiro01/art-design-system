@@ -22,8 +22,7 @@
     "./dist/index.css"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --dts-resolve --out-dir dist --external react,react-dom --tsconfig tsconfig.build.json && [ -f src/index.css ] && cp src/index.css dist/index.css || true && cp ./package.dist.json ./dist/package.json",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --dts-resolve --out-dir dist --external react,react-dom --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts --dts-resolve --out-dir dist --external react,react-dom --tsconfig tsconfig.build.json && shx cp src/index.css dist/index.css && shx cp ./package.dist.json ./dist/package.json",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix"
   },
@@ -51,6 +50,7 @@
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.17.4",
-    "@vanilla-extract/recipes": "^0.5.7"
+    "@vanilla-extract/recipes": "^0.5.7",
+    "@vanilla-extract/vite-plugin": "^5.1.0"
   }
 }

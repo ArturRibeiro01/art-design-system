@@ -8,7 +8,7 @@ import {
   lineHeights,
   radius,
   space,
-} from '@art-design-system/tokens';
+} from '@art-design-systems/tokens';
 
 export const unicornTheme = createTheme(themeContract, {
   color: {
@@ -41,7 +41,7 @@ export const unicornTheme = createTheme(themeContract, {
       info: palette.sky[400],
     },
   },
-  
+
   font: {
     family: {
       default: fonts.default,
@@ -52,7 +52,7 @@ export const unicornTheme = createTheme(themeContract, {
     weight: fontWeights,
     lineHeight: lineHeights,
   },
-  
+
   radius,
   space,
 });
