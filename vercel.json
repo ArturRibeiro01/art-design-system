@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "art-design-systems-storybook",
+      "rootDirectory": "packages/docs"
+    }
+  ],
+  "buildCommand": "npm run build-storybook",
+  "outputDirectory": "storybook-static",
+  "ignoreCommand": "echo 'Usar preview apenas nas branches dev/main'",
+  "cleanUrls": true
+}

@@ -13,12 +13,13 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true
-  },
-      "paths": {
-      "@art-design-systems/tokens": ["../tokens/dist"], // Adjust path as per your monorepo structure
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@art-design-systems/tokens": ["../tokens/dist"],
       "@art-design-systems/tokens/*": ["../tokens/dist/*"]
-    },
+    }
+  },
+
   "include": ["src"],
   "exclude": ["dist", "node_modules"]
 }
