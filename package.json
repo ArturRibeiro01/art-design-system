@@ -10,7 +10,7 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "npm run build && changeset publish",
-    "prepare": "husky",
+    "prepare": "test \"$HUSKY\" != \"0\" && husky install || echo '🐶 Husky desativado (CI)'",
     "lint-staged": "lint-staged --config lint-staged.config.mjs",
     "lint": "turbo run lint"
   },
@@ -35,9 +35,5 @@
   },
   "dependencies": {
     "@vanilla-extract/recipes": "^0.5.7"
-  },
-  "lint-staged": {
-    "**/*.{ts,tsx,js,jsx,json,md}": "npm run lint:fix"
   }
-
 }
