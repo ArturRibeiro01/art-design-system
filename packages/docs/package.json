@@ -1,0 +1,44 @@
+{
+  "name": "@art-design-systems/docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o storybook-static"
+  },
+  "dependencies": {
+    "@art-design-systems/eslint-config": "*",
+    "@art-design-systems/react-components": "*",
+    "@art-design-systems/tokens": "*",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "storybook": "^8.6.14"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@rolldown/pluginutils": "^1.0.0-beta.19",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^5.4.19",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

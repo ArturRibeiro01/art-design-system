@@ -1,4 +1,9 @@
 {
-  "extends": "@art-design-system/tsconfig/react.json",
-  "include": ["src"],
+  "extends": "@art-design-systems/tsconfig/react.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css"],
+  "exclude": ["dist", "node_modules"]
 }

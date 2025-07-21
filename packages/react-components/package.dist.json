@@ -1,0 +1,16 @@
+{
+  "name": "@art-design-systems/react-components",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "style": "./index.css",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./index.css": "./index.css"
+  },
+  "sideEffects": ["./index.css"]
+}
