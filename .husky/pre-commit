@@ -1,0 +1,5 @@
+echo "🔍 Rodando lint nos arquivos staged..."
+npx lint-staged
+
+echo "🛠️ Rodando build em todos os pacotes..."
+npm run build || exit 1

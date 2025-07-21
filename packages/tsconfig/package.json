@@ -3,8 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "lint:fix": "echo '✅ Nenhum lint necessário nesse pacote.'"
+  },
   "exports": {
     "./tsconfig.base.json": "./tsconfig.base.json",
     "./react.json": "./react.json"
+  },
+  "turbo": {
+    "pipeline": {
+      "lint:fix": false
+    }
   }
 }

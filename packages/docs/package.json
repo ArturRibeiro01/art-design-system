@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint src --ext .ts,.tsx --ignore-pattern storybook-static",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-static"
@@ -40,5 +41,9 @@
     "typescript-eslint": "^8.35.1",
     "vite": "^5.4.19",
     "vite-tsconfig-paths": "^5.1.4"
+  },
+  "turbo": {
+    "outputs": ["dist/**"]
   }
+
 }
