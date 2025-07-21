@@ -9,15 +9,21 @@
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "npm run build && changeset publish"
+    "release": "npm run build && changeset publish",
+    "prepare": "husky",
+    "lint-staged": "lint-staged --config lint-staged.config.mjs",
+    "lint": "turbo run lint"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@types/mdx": "^2.0.13",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.7.0",
     "cpx": "^1.5.0",
+    "husky": "^9.1.7",
     "shx": "^0.4.0",
     "turbo": "^2.5.4",
     "vite": "^5.4.19",
@@ -29,5 +35,9 @@
   },
   "dependencies": {
     "@vanilla-extract/recipes": "^0.5.7"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx,json,md}": "npm run lint:fix"
   }
+
 }
