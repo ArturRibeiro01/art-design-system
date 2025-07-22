@@ -1,4 +1,3 @@
-// /packages/docs/.storybook/main.ts
 import { mergeConfig } from 'vite';
 import * as path from 'path';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -9,8 +8,8 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-essentials'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)', '../src/stories/**/*.mdx'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-docs'],
   viteFinal: async (config) => {
     return mergeConfig(config, {
       plugins: [tsconfigPaths()],
