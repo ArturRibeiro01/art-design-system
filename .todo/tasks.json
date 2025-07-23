@@ -1,0 +1,72 @@
+[
+  {
+    "id": "TASK_1",
+    "priority": "MEDIUM",
+    "tags": [
+      "react-components"
+    ],
+    "description": "Configurar temas usando vanilla-extract na lib de tokens",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 21
+      },
+      "time": {
+        "hour": 22,
+        "minute": 31,
+        "second": 34,
+        "nano": 487437000
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_3",
+    "priority": "MEDIUM",
+    "tags": [
+      "react-components"
+    ],
+    "description": "CLI para criação de componentes",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 21
+      },
+      "time": {
+        "hour": 22,
+        "minute": 53,
+        "second": 1,
+        "nano": 433660000
+      }
+    },
+    "isImported": false
+  },
+  {
+    "id": "TASK_6",
+    "priority": "HIGH",
+    "tags": [
+      "docs",
+      "structure"
+    ],
+    "description": "Configuração visual do storybook",
+    "status": "IN_PROGRESS",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 21
+      },
+      "time": {
+        "hour": 23,
+        "minute": 25,
+        "second": 35,
+        "nano": 936930000
+      }
+    },
+    "isImported": false
+  }
+]

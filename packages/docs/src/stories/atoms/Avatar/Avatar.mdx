@@ -1,5 +1,4 @@
-
-import { Meta, Title, Primary, ArgsTable } from '@storybook/addon-docs';
+import { Meta, Title, Primary, ArgsTable } from '@storybook/blocks';
 import * as AvatarStories from './Avatar.stories';
 
 <Meta of={AvatarStories} />
@@ -7,4 +6,4 @@ import * as AvatarStories from './Avatar.stories';
 <Title>Avatar</Title>
 
 <Primary />
-<ArgsTable story="Default" />
+<ArgsTable of={AvatarStories.Default} />

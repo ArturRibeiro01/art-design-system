@@ -62,7 +62,6 @@ const meta: Meta<typeof Avatar> = {
   parameters: {
     layout: 'centered',
   },
-  // tags: ['autodocs'],
 };
 
 export default meta;
