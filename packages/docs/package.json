@@ -10,7 +10,8 @@
     "lint": "eslint src --ext .ts,.tsx --ignore-pattern storybook-static",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
+    "storybook:preview": "storybook dev",
+    "storybook": "turbo run build --filter=@art-design-systems/react-components && npm run storybook:preview",
     "build-storybook": "storybook build -o storybook-static"
   },
   "dependencies": {
