@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { Avatar } from '@art-design-systems/react-components';
 
 const meta: Meta<typeof Avatar> = {
@@ -11,9 +10,8 @@ const meta: Meta<typeof Avatar> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof Avatar> = {
   args: {
     src: `https://i.pravatar.cc/150?img=${Math.floor(Math.random() * 70)}`,
     alt: 'Avatar demo',

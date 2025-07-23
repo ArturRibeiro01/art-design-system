@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-// import { ExternalLink } from 'lucide-react'; // exemplo, opcional
+import { ExternalLink } from 'lucide-react';
 
 const Page = () => (
   <div style={{ padding: 32, fontFamily: 'Inter, sans-serif' }}>
@@ -21,7 +21,7 @@ const Page = () => (
       <h2>🔗 Useful Links</h2>
       <p>
         <a href="https://www.figma.com" target="_blank" rel="noreferrer">
-          {/*Open Figma file <ExternalLink size={16} style={{ marginLeft: 4 }} />*/}
+          Open Figma file <ExternalLink size={20} style={{ marginLeft: 4 }} />
         </a>
       </p>
     </div>
@@ -29,7 +29,7 @@ const Page = () => (
 );
 
 const meta: Meta<typeof Page> = {
-  title: 'Docs/Getting Started/What is Design System',
+  title: 'Getting Started/What is Design System',
   component: Page,
   parameters: {
     layout: 'fullscreen',
