@@ -92,5 +92,29 @@
       }
     },
     "isImported": false
+  },
+  {
+    "id": "TASK_15",
+    "priority": "CRITICAL",
+    "tags": [
+      "docs",
+      "structure"
+    ],
+    "description": "Configuração dos Docs do Storybook",
+    "status": "TODO",
+    "date": {
+      "date": {
+        "year": 2025,
+        "month": 7,
+        "day": 22
+      },
+      "time": {
+        "hour": 23,
+        "minute": 2,
+        "second": 54,
+        "nano": 541997000
+      }
+    },
+    "isImported": false
   }
 ]
