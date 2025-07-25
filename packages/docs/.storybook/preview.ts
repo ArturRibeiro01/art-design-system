@@ -1,5 +1,6 @@
 import "../../react-components/src/index.css";
 import type { Preview } from "@storybook/react";
+import { themes } from "@art-design-systems/react-components/styles/theme.css";
 
 const preview: Preview = {
   parameters: {
@@ -16,6 +17,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      // Aplica a classe do tema light no html (Storybook iframe)
+      document.documentElement.className = themes.light;
+      return <Story />;
+    },
+  ],
 };
 
 export default preview;

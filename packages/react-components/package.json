@@ -16,7 +16,8 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./index.css": "./dist/index.css"
+    "./index.css": "./dist/index.css",
+    "./styles/theme.css": "./dist/styles/theme.css.js"
   },
   "sideEffects": [
     "./dist/index.css"
