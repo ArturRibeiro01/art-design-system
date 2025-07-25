@@ -1,2 +1,2 @@
-export { Avatar } from './Avatar';
-export { Button } from './Button';
+export { Avatar } from './atoms/Avatar';
+export { Button } from './atoms/Button';
