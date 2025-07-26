@@ -1,6 +1,11 @@
-import "../../react-components/src/index.css";
-import type { Preview } from "@storybook/react";
+import "@art-design-systems/react-components/index.css";
+import type { Preview, Decorator } from "@storybook/react";
 import { themes } from "@art-design-systems/react-components/styles/theme.css";
+
+const withTheme: Decorator = (StoryFn) => {
+  document.documentElement.className = themes.light;
+  return StoryFn();
+};
 
 const preview: Preview = {
   parameters: {
@@ -13,16 +18,11 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Getting Started', 'Atoms', 'Molecules', 'Organisms'],
+        order: ["Getting Started", "Atoms", "Molecules", "Organisms"],
       },
     },
   },
-  decorators: [
-    (StoryFn: React.ComponentType) => {
-      document.documentElement.className = themes.light;
-      return <StoryFn />;
-    },
-  ],
+  decorators: [withTheme],
 };
 
 export default preview;

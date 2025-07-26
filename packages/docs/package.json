@@ -10,8 +10,7 @@
     "lint": "eslint src --ext .ts,.tsx --ignore-pattern storybook-static",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "storybook:preview": "storybook dev",
-    "storybook": "turbo run build --filter=@art-design-systems/react-components && npm run storybook:preview",
+    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-static"
   },
   "dependencies": {
@@ -45,8 +44,6 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "turbo": {
-    "outputs": [
-      "dist/**"
-    ]
+    "outputs": ["dist/**"]
   }
 }

@@ -7,10 +7,9 @@
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
     "isolatedModules": false,
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "esnext",
     "skipLibCheck": true,
     "strict": true
   },

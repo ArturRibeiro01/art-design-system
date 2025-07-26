@@ -7,33 +7,28 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "style": "./dist/index.css",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./index.css": "./dist/index.css",
-    "./styles/theme.css": "./dist/styles/theme.css.js"
+    "./index.css": {
+      "import": "./dist/index.css"
+    },
+    "./styles/theme.css": {
+      "import": "./dist/styles/theme.css.js",
+      "types": "./dist/styles/theme.css.d.ts"
+    }
   },
-  "sideEffects": [
-    "./dist/index.css"
-  ],
+  "sideEffects": ["./dist/index.css"],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --dts-resolve --out-dir dist --external react,react-dom --tsconfig tsconfig.build.json && shx cp src/index.css dist/index.css && shx cp ./package.dist.json ./dist/package.json",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix"
   },
-  "keywords": [
-    "react",
-    "ui",
-    "components",
-    "design-system",
-    "art"
-  ],
+  "keywords": ["react", "ui", "components", "design-system", "art"],
   "author": "Artur Ribeiro",
   "license": "MIT",
   "optionalDependencies": {

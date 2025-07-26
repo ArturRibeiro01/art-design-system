@@ -13,7 +13,7 @@
     "prepare": "test \"$HUSKY\" != \"0\" && husky install || echo '🐶 Husky desativado (CI)'",
     "lint-staged": "lint-staged --config lint-staged.config.mjs",
     "lint": "turbo run lint",
-    "storybook": "turbo run build --filter=@art-design-systems/react-components && turbo run storybook --filter=@art-design-systems/docs"
+    "storybook": "turbo run build --filter=@art-design-systems/react-components && npm run storybook --workspace=@art-design-systems/docs"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
