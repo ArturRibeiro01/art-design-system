@@ -5,6 +5,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"], // Ensure "DOM" and "ESNext" are included
+    "moduleResolution": "bundler",
     "types": ["react", "react-dom", "vite/client", "mdx"], // Explicitly include types if necessary
     "skipLibCheck": true, // Often useful in monorepos to avoid issues with node_modules types
    "outDir": "./dist",
