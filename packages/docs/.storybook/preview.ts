@@ -18,10 +18,9 @@ const preview: Preview = {
     },
   },
   decorators: [
-    (Story) => {
-      // Aplica a classe do tema light no html (Storybook iframe)
+    (StoryFn: React.ComponentType) => {
       document.documentElement.className = themes.light;
-      return <Story />;
+      return <StoryFn />;
     },
   ],
 };
